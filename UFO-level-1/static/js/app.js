@@ -16,7 +16,9 @@ console.log(tableData);
 tableDisplay(tableData);
 
 var button = d3.select("#filter-btn");
+var form = d3.select("#date-form");
 
+form.on("submit", runEnter);
 button.on("click", runEnter);
 
 function runEnter() {
